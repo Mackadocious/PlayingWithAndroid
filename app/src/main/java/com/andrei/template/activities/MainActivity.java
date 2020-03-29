@@ -29,9 +29,8 @@ public class MainActivity extends BaseActivity {
 
   @BindView(R.id.button_dialog) Button button_dialog;
   @BindView(R.id.button_snackbar) Button button_snackbar;
-  @BindView(R.id.button_edialog) Button button_edialog;
-  @BindView(R.id.button_esnackbar) Button button_esnackbar;
   @BindView(R.id.relayout_main) RelativeLayout relayout_main;
+
 
   private MainActivity mContext;
   private Box<Note> notesBox;
@@ -85,19 +84,11 @@ public class MainActivity extends BaseActivity {
 
   @OnClick(R.id.button_snackbar) public void onClick_button_snackbar() {
 
-    DialogFactory.loading_toast(mContext,"Loading the thing...").show();
 
   }
 
-  @OnClick(R.id.button_edialog) public void onClick_button_edialog() {
-    DialogFactory.createGenericErrorDialog(mContext, "hello from error dialog").show();
-  }
 
-  @OnClick(R.id.button_esnackbar) public void onClick_button_esnackbar() {
 
-    DialogFactory.error_toast(mContext,"Invalid username or password").show();
-
-  }
 
   //---------- Menu Items ----------
   @Override public boolean onCreateOptionsMenu(Menu menu) {
