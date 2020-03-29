@@ -32,6 +32,7 @@ public class MainActivity extends BaseActivity {
   @BindView(R.id.relayout_main) RelativeLayout relayout_main;
 
 
+
   private MainActivity mContext;
   private Box<Note> notesBox;
   private Query<Note> notesQuery;
@@ -83,6 +84,7 @@ public class MainActivity extends BaseActivity {
   }
 
   @OnClick(R.id.button_snackbar) public void onClick_button_snackbar() {
+
 
 
   }
