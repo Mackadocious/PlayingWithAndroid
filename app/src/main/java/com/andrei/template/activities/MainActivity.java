@@ -79,7 +79,8 @@ public class MainActivity extends BaseActivity {
 
   @OnClick(R.id.button_dialog) public void onClick_button_dialog() {
 
-    DialogFactory.success_toast(mContext,"All is good!").show();
+    Intent openingScreenIntent = new Intent(MainActivity.this, OpeningScreen.class);
+    MainActivity.this.startActivity(openingScreenIntent);
 
   }
 
